@@ -16,10 +16,16 @@ body {
 .container {
   max-width: 600px;
   background-color: rgb(219, 240, 231);
-  margin: 4rem;
+  margin: 0 auto 4rem;
   padding: 2rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
+}
+
+.page-date {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  text-align: right;
 }
 
 h1 {
@@ -37,15 +43,30 @@ footer {
   text-align: center;
 }
 
+.city-list {
+  display: grid;
+}
+
 .city {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
   padding: 30px;
-  margin: 10px, 0;
+  margin: 0;
 }
 .hours {
   opacity: 0.7;
+}
+
+.city-clock {
+  text-align: right;
+}
+
+.date {
+  font-size: 1rem;
+  margin-top: 2px;
 }
 
 .time {
@@ -54,5 +75,11 @@ footer {
 }
 .timing {
   font-size: 20px;
+
   vertical-align: middle;
+}
+
+.page-date {
+  margin-bottom: 10px;
+  margin-right: 5px;
 }
