@@ -12,6 +12,7 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  color: black;
 }
 .container {
   max-width: 600px;
